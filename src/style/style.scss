@@ -1,0 +1,123 @@
+#root{
+	background-image: url(../img/bgmovie.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(128, 128, 128, 0.808);
+	.container-fluid{
+		padding: 0 85px;
+		.chairList{
+			font-size: 15px;
+			font-weight: 600;
+			line-height: 40px;
+			.d-flex{
+				&:nth-of-type(1) {
+					.Chair{
+						color: yellow;
+						border: none!important;
+						background-color: transparent!important;
+						pointer-events: none;
+					}
+				}
+				&:nth-of-type(2) {
+					
+						margin-top: 0!important;
+					
+				}
+			}
+		}
+	}
+}
+.BookingMovie{
+	h1{
+		font-size: 25px;
+		color: orange;
+		padding-top: 10px;
+	}
+	h2{
+		font-size: 15px;
+		color: white;
+	}
+}
+.Chair{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border: solid 2px orange;
+	background: white;
+	border-radius: 6px;
+	&:hover{
+		cursor: pointer;
+		background-color:black;
+		color: white;
+		transition: all 0.3s ease-in-out;
+	}
+	&.booking{
+		background-color: rgb(107, 238, 109);
+		color: white;
+		border: transparent;
+	}
+	&.booked{
+		background-color: orange;
+		color: white;
+		border: transparent;
+		pointer-events: none;
+	}
+
+}
+
+.Result{
+	color: white;
+	h1{
+		color: white;
+		padding: 30px 0;
+		font-size: 25px;
+		font-weight: 600;
+	}
+	.d-flex{
+		align-items: end;
+		p{
+			margin-bottom: 0;
+		}
+		.gheNgoi{
+			width: 40px;
+			height: 40px;
+			border-radius: 6px;
+		}
+		&:nth-of-type(1){
+			.gheNgoi{
+				background-color: orange;
+			}
+		}
+		&:nth-of-type(2){
+			.gheNgoi{
+				background-color: rgb(107 238 109);
+			}
+		}
+		&:nth-of-type(3){
+			.gheNgoi{
+				background-color: white;
+				border: solid 2px orange;
+			}
+		}
+	}
+	table{
+		thead{
+			color: white;
+			th{
+				border: solid 1px white;
+			}
+		}
+	}
+}
+
+.btnThanhToan{
+	&:hover{
+		background-color: white!important;
+		color: green;
+	}
+}
+
